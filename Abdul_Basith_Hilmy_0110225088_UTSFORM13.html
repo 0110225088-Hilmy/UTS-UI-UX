@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pendaftaran Kendaraan</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <form class="registration-form">
+            <div class="search-section">
+                <label for="search">Cari Sivitas Akademika</label>
+                <div class="search-box">
+                    <input type="text" id="search" name="search" placeholder="search">
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>
+
+            <hr class="divider">
+
+            <div class="data-display">
+                <div class="data-row">
+                    <label>Nama Lengkap :</label>
+                    <span class="data-value">Nama Mahasiswa / Dosen</span>
+                </div>
+                <div class="data-row">
+                    <label>Asal Prodi :</label>
+                    <span class="data-value">Asal Prodi</span>
+                </div>
+                <div class="data-row">
+                    <label>Status :</label>
+                    <span class="data-value">Mahasiswa / Dosen</span>
+                </div>
+            </div>
+
+            <hr class="divider">
+
+            <div class="vehicle-section">
+                <div class="form-group row-radio">
+                    <label>Jenis Kendaraan :</label>
+                    <div class="radio-group">
+                        <input type="radio" id="motor" name="jenis_kendaraan" value="Motor" checked>
+                        <label for="motor">Motor</label>
+                        <input type="radio" id="mobil" name="jenis_kendaraan" value="Mobil">
+                        <label for="mobil">Mobil</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="nopol">NoPol</label>
+                    <input type="text" id="nopol" name="nopol">
+                </div>
+
+                <div class="form-group">
+                    <label for="merk">Merk</label>
+                    <input type="text" id="merk" name="merk">
+                </div>
+
+                <div class="form-group file-upload-group">
+                    <label for="stnk">Upload STNK</label>
+                    <div class="file-input-container">
+                        <input type="text" id="stnk_filename" readonly placeholder="Nama file..." class="file-placeholder">
+                        <input type="file" id="stnk_upload" name="stnk_upload" style="display:none;">
+                        <button type="button" class="browse-btn" onclick="document.getElementById('stnk_upload').click()">Browse</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="button-container">
+                <button type="submit" class="register-btn">Daftar</button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        // Script untuk menampilkan nama file di input text
+        document.getElementById('stnk_upload').onchange = function () {
+            document.getElementById('stnk_filename').value = this.files.length > 0 ? this.files[0].name : '';
+        };
+    </script>
+</body>
+</html>
