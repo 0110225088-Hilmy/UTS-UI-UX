@@ -11,8 +11,8 @@ body {
 .container {
     background-color: white;
     padding: 30px;
-    border: 2px solid black; /* Border luar form */
-    box-shadow: 4px 4px 0 0 black; /* Efek sketsa / bayangan */
+    border: 2px solid black; 
+    box-shadow: 4px 4px 0 0 black; 
     width: 350px;
 }
 
@@ -20,8 +20,6 @@ body {
     display: flex;
     flex-direction: column;
 }
-
-/* --- Bagian Pencarian --- */
 
 .search-section {
     display: flex;
@@ -41,7 +39,7 @@ body {
     border-radius: 20px;
     overflow: hidden;
     padding: 2px 5px;
-    width: 150px; /* Lebar input search */
+    width: 150px; 
 }
 
 .search-box input {
@@ -57,16 +55,12 @@ body {
     color: black;
 }
 
-/* --- Pembatas Garis --- */
-
 .divider {
     border: 0;
     height: 1px;
     background-color: black;
     margin: 15px 0;
 }
-
-/* --- Bagian Data Diri --- */
 
 .data-display {
     margin-bottom: 15px;
@@ -78,16 +72,13 @@ body {
 }
 
 .data-row label {
-    width: 120px; /* Lebar label agar sejajar */
+    width: 120px;
     font-weight: bold;
 }
 
 .data-value {
-    /* Gaya teks data agar sesuai wireframe */
     font-style: italic; 
 }
-
-/* --- Bagian Form Kendaraan --- */
 
 .form-group {
     margin-bottom: 15px;
@@ -96,7 +87,7 @@ body {
 }
 
 .form-group label {
-    width: 120px; /* Lebar label agar sejajar */
+    width: 120px; 
     font-weight: bold;
 }
 
@@ -104,11 +95,10 @@ body {
     flex-grow: 1;
     border: 1px solid black;
     padding: 8px;
-    box-shadow: 2px 2px 0 0 black; /* Efek sketsa pada input */
+    box-shadow: 2px 2px 0 0 black; 
     outline: none;
 }
 
-/* Radio Button */
 .row-radio {
     margin-bottom: 10px;
     align-items: flex-start;
@@ -127,7 +117,6 @@ body {
     margin-left: 5px;
 }
 
-/* Input File / Upload STNK */
 .file-upload-group {
     align-items: stretch;
 }
@@ -141,7 +130,7 @@ body {
 
 .file-placeholder {
     flex-grow: 1;
-    border: none !important; /* Hilangkan border dari input text di dalam container */
+    border: none !important; 
     box-shadow: none !important;
     padding: 8px;
     outline: none;
@@ -157,8 +146,6 @@ body {
     margin: 3px;
 }
 
-/* --- Tombol Daftar --- */
-
 .button-container {
     display: flex;
     justify-content: flex-end;
@@ -166,7 +153,7 @@ body {
 }
 
 .register-btn {
-    background-color: #d3d3d3; /* Warna abu-abu */
+    background-color: #d3d3d3; 
     color: black;
     padding: 8px 20px;
     border: 2px solid black;
@@ -179,4 +166,5 @@ body {
 .register-btn:active {
     box-shadow: 0 0 0 0 black;
     transform: translate(3px, 3px);
+
 }
